@@ -1,0 +1,15 @@
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.AssemblyInfoInputs.cache
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.AssemblyInfo.cs
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.csproj.CoreCompileInputs.cache
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\bin\Debug\net10.0\City-Drive-Manager.exe
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\bin\Debug\net10.0\City-Drive-Manager.deps.json
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\bin\Debug\net10.0\City-Drive-Manager.runtimeconfig.json
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\bin\Debug\net10.0\City-Drive-Manager.dll
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\bin\Debug\net10.0\City-Drive-Manager.pdb
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.dll
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\refint\City-Drive-Manager.dll
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.pdb
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.genruntimeconfig.cache
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\ref\City-Drive-Manager.dll
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.sourcelink.json

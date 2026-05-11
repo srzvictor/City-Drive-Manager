@@ -1,0 +1,250 @@
+# City Drive Manager
+
+Application console en C# / .NET permettant de gérer une flotte de véhicules, des points d’intérêt urbains et des trajets dans le cadre d’une smart city.
+
+---
+
+## Description du projet
+
+City Drive Manager permet de :
+
+* Ajouter et gérer des points d’intérêt (campus, monuments historiques)
+* Ajouter et gérer différents types de véhicules
+* Simuler l’accélération et le freinage
+* Calculer des distances entre deux lieux
+* Créer des trajets et estimer leur durée
+* Générer automatiquement des liens Google Maps
+
+---
+
+## Architecture du projet
+
+```text
+City-Drive-Manager/
+│── Program.cs
+│── City-Drive-Manager.csproj
+│── README.md
+│
+├── Models/
+│   ├── PointOfInterest.cs
+│   ├── Campus.cs
+│   ├── HistoricalMonument.cs
+│   ├── Vehicle.cs
+│   ├── Car.cs
+│   ├── Truck.cs
+│   ├── HybridCar.cs
+│   ├── IThermalCar.cs
+│   ├── IElectricCar.cs
+│   └── Trip.cs
+│
+└── Services/
+    └── CityService.cs
+```
+
+---
+
+## Concepts utilisés
+
+* Programmation orientée objet (POO)
+* Héritage
+* Polymorphisme
+* Interfaces
+* Classes abstraites
+* Collections (`List<T>`)
+* Gestion des dates (`DateTime`)
+* Validation des entrées utilisateur (`TryParse`)
+
+---
+
+## Points d’intérêt
+
+### PointOfInterest
+
+Classe de base contenant :
+
+* `Name`
+* `Latitude`
+* `Longitude`
+
+Fonctionnalités :
+
+* Calcul de distance simplifié
+* Génération d’URL Google Maps
+
+### Classes dérivées
+
+* `Campus` : capacité d’accueil
+* `HistoricalMonument` : année de construction
+
+---
+
+## Véhicules
+
+### Vehicle (classe abstraite)
+
+Propriétés :
+
+* `Brand`
+* `Color`
+* `CurrentSpeed`
+
+Méthodes :
+
+* `Accelerate()` : augmente la vitesse de 10 km/h
+* `Brake()` : diminue la vitesse de 10 km/h (minimum 0)
+
+### Classes dérivées
+
+* `Car` : modèle
+* `Truck` : tonnage
+* `HybridCar` : batterie et carburant
+
+---
+
+## Interfaces
+
+### IElectricCar
+
+* `BatteryLevel`
+* `Recharge(double amount)`
+
+### IThermalCar
+
+* `FuelLevel`
+* `Refuel(double amount)`
+
+---
+
+## Fonctionnement de HybridCar
+
+Lors d’une accélération :
+
+1. Utilisation de la batterie en priorité (-2 %)
+2. Si la batterie est vide, utilisation du carburant (-1 L)
+3. La vitesse augmente de 10 km/h
+
+---
+
+## Gestion des trajets
+
+### Trip
+
+Contient :
+
+* Le véhicule utilisé
+* Le point de départ
+* Le point d’arrivée
+* La date de départ
+
+Fonctionnalités :
+
+* Calcul de la distance
+* Estimation de la durée (50 km/h par défaut)
+* Affichage formaté de la date
+
+---
+
+## Menu console
+
+```text
+1. Ajouter un point d'intérêt
+2. Ajouter un véhicule
+3. Afficher les véhicules
+4. Afficher les lieux
+5. Calculer une distance
+6. Simuler accélération/freinage
+7. Créer un trajet
+8. Afficher les trajets
+9. Quitter
+```
+
+---
+
+## Installation et exécution
+
+### Prérequis
+
+* .NET SDK 8.0 ou supérieur
+
+### Lancer le projet
+
+```bash
+dotnet restore
+dotnet run
+```
+
+---
+
+## Exemple d’utilisation
+
+### Ajout d’un monument
+
+* Nom : Tour Eiffel
+* Latitude : 48.85768
+* Longitude : 2.30006
+* Année : 1889
+
+### Résultat
+
+```text
+HISTORICAL MONUMENT
+Nom : TOUR EIFFEL
+Coordonnées : (48,85768, 2,30006)
+Google Maps : https://www.google.com/maps?q=48.85768,2.30006
+Construit en : 1889
+```
+
+---
+
+## Calcul de distance
+
+Le projet utilise la formule euclidienne simplifiée demandée dans le sujet :
+
+```text
+√((lat2 - lat1)² + (lon2 - lon1)²)
+```
+
+Cette formule ne représente pas la distance réelle sur Terre, mais respecte les consignes du projet.
+
+---
+
+## Choix techniques
+
+* Séparation entre les modèles et la logique métier
+* Utilisation d’interfaces pour représenter les véhicules électriques et thermiques
+* Validation des saisies utilisateur
+* Génération d’URL compatibles avec Google Maps grâce à `CultureInfo.InvariantCulture`
+
+---
+
+## Auteur
+
+Victor Serazin
+
+* [victor.serazin@ynov.com](mailto:victor.serazin@ynov.com)
+* Instagram : victor_srz
+
+---
+
+## Contexte pédagogique
+
+Projet réalisé dans le cadre de la formation B2 Informatique et Cybersécurité.
+
+---
+
+## Fonctionnalités réalisées
+
+* Gestion des points d’intérêt
+* Gestion des véhicules
+* Interfaces `IElectricCar` et `IThermalCar`
+* Gestion des trajets
+* Calcul de distance
+* Menu console interactif
+* Validation des saisies
+* README détaillé
+
+---
+
+## Licence
+
+Projet académique à but pédagogique.
