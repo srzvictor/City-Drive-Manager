@@ -37,7 +37,7 @@ namespace CityDriveManager.Services
 
             } while (choice != 9);
 
-            Console.WriteLine("Merci d'avoir utilisé City Drive Manager 🚗");
+            Console.WriteLine("Merci d'avoir utilisé City Drive Manager");
         }
 
         private void ShowMenu()
