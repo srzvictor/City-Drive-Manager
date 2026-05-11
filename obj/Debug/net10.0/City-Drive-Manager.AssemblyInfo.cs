@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("City-Drive-Manager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b91be9694767acce6f838663b7c6ba91d8936c51")]
 [assembly: System.Reflection.AssemblyProductAttribute("City-Drive-Manager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("City-Drive-Manager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

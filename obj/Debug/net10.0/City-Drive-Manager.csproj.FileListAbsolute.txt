@@ -12,3 +12,4 @@ C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\refin
 C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.pdb
 C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.genruntimeconfig.cache
 C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\ref\City-Drive-Manager.dll
+C:\Users\Victor SERAZIN\Desktop\B2\C#\City-Drive-Manager\obj\Debug\net10.0\City-Drive-Manager.sourcelink.json
